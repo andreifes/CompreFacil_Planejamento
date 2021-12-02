@@ -14,31 +14,182 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 
 
 ### 3.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS) - Para versão inicial<br>
-
+![Arquivo PDF do Protótipo Balsamiq feito para o CompreFácil](https://raw.githubusercontent.com/andreifes/CompreFacil_Planejamento/main/Arquivos/Wireframes_Inicial.pdf")
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? - Para versão inicial<br>
-
+* Relatório com a quantidade total de produtos vendidos pelo supermercado, incluindo as seguintes informações: nome do supermercado e quantidade de produtos total vendidos.
+* Relatório dos supermercados de uma cidade, incluindo as seguintes informações: nome da cidade e nome dos supermercados.
+* Relatório com os produtos de um supermercado, incluindo as seguintes informações: nome do supermercado, nome e preço dos produtos.
+* Relatório que informe os produtos de uma categoria, incluindo as seguintes informações: nome da categoria e nome dos produtos.
+* Relatório com as formas de pagamento e quantidade utilizadas no supermercado, incluindo as seguintes informações: nome do supermercado, forma de pagamento e quantidade.
 
 
 ### 4.TABELA DE DADOS DO SISTEMA - Para versão inicial<br>
 
 
 ### 5.PMC - Para versão final<br>
-
+![Aquivo PDF do PMC feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/PMC_Final.pdf)
 
 
 ### 6.MODELO CONCEITUAL - Para versão inicial<br>    
-
+![Aquivo PNG do Modelo Conceitual feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/IMGS/Conceitual_Inicial.PNG)
 
 #### 6.1 Descrição dos dados - Para versão inicial<br> 
+  USUARIO: tabela que armazena as informações relativas ao usuário
+  ID: campo que armazena o identificador do usuário
+  NOME: campo que armazena o nome do usuário
+  EMAIL: campo que armazena o e-mail do usuário
+  TELEFONE: campo que armazena o telefone do usuário
+  SENHA: campo que armazena a senha do usuário
+
+  ENDERECO: tabela que armazena as informações relativas a endereço do mercado
+  ID: campo que armazena o identificador do endereço
+  CIDADE: campo que armazena a cidade referente ao endereço
+  BAIRRO: campo que armazena o bairro referente ao endereço
+
+  CATEGORIA: tabela que armazena as informações relativas a categoria do produto
+  ID: campo que armazena o identificador da categoria
+  NOME: campo que armazena o nome das possíveis categorias de um produto
+
+  FORMA_PGTO: tabela que armazena as informações relativas a opção de forma de pagamento da uma compra
+  ID: campo que armazena o identificador da forma de pagamento
+  NOME: campo que armazena o nome da forma de pagamento
+
+  MERCADO: tabela que armazena as informações relativas ao mercado
+  ID: campo que armazena o identificador do mercado
+  NOME: campo que armazena o nome do mercado
+  IMG: campo que armazena a imagem(base64) do mercado
+  ID_ENDERECO: campo que armazena o identificador do endereço do mercado
+
+  PRODUTO: tabela que armazena as informações relativas ao produto
+  ID: campo que armazena o identificador do mercado
+  NOME: campo que armazena o nome do produto
+  IMG: campo que armazena a imagem(base64) do produto
+  ID_CATEGORIA: campo que armazena o identificador da categoria do produto
+
+  COMPRA: tabela que armazena as informações relativas a compra feita por um usuário
+  ID: campo que armazena o identificador da compra realizada pelo usuário
+  DATA_HORA: campo que armazena a data e hora da compra
+  STTS_PGTO: campo que armazena a confirmação ou não de pagamento da compra
+  ID_USUARIO: campo que armazena o identificador do usuário que realizou a compra
+  ID_FORMA_PGTO: campo que armazena o identificador da forma de pagamento utilizada 
+
+  ITEM: tabela que armazena as informações relativas aos items dos mercados
+  ID: campo que armazena o identificador do item
+  ID_MERCADO: campo que armazena o identificador do mercado 
+  ID_PRODUTO: campo que armazena o identificador do produto contido no item
+  PRECO: campo que armazena o preco do produto
+
+  COMPRA_ITEM: tabela que armazena as informações relativas a compra dos itens de um mercado
+  ID_COMPRA: campo que armazena o identificador da compra que contém os itens
+  ID_ITEM: campo que armazena o identificador do item
+  QUANTIDADE: campo que armazena a quantidade do item
 
 
 ### 7.MODELO LÓGICO - Para versão inicial<br>
+![Aquivo PNG do Modelo Lógico feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/IMGS/Logico_Inicial.PNG)
 
 
 ### 8.MODELO FÍSICO - Para versão inicial<br>
 ```sql
+CREATE TABLE USUARIO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    telefone VARCHAR(30),
+    senha VARCHAR(30)
+);
 
+CREATE TABLE ENDERECO (
+    ID INT PRIMARY KEY,
+    cidade VARCHAR(255),
+    bairro VARCHAR(255)
+);
+
+CREATE TABLE CATEGORIA (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE FORMA_PGTO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE MERCADO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    img TEXT,
+    ID_endereco INT
+);
+
+CREATE TABLE PRODUTO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    img TEXT,
+    ID_categoria INT
+);
+
+CREATE TABLE COMPRA (
+    ID INT PRIMARY KEY,
+    data_hora TIMESTAMP,
+    stts_pgto BOOLEAN,
+    ID_usuario INT,
+    ID_forma_pgto INT
+);
+
+CREATE TABLE ITEM (
+    ID INT PRIMARY KEY,
+    preco MONEY,
+    ID_mercado INT,
+    ID_produto INT
+);
+
+CREATE TABLE COMPRA_ITEM (
+    ID_item INT,
+    ID_compra INT,
+    quantidade INT
+);
+ 
+ALTER TABLE MERCADO ADD CONSTRAINT FK_MERCADO_2
+    FOREIGN KEY (ID_endereco)
+    REFERENCES ENDERECO (ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_2
+    FOREIGN KEY (ID_usuario)
+    REFERENCES USUARIO (ID)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_3
+    FOREIGN KEY (ID_forma_pgto)
+    REFERENCES FORMA_PGTO (ID)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE PRODUTO ADD CONSTRAINT FK_PRODUTO_2
+    FOREIGN KEY (ID_categoria)
+    REFERENCES CATEGORIA (ID)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE ITEM ADD CONSTRAINT FK_ITEM_2
+    FOREIGN KEY (ID_mercado)
+    REFERENCES MERCADO (ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE ITEM ADD CONSTRAINT FK_ITEM_3
+    FOREIGN KEY (ID_produto)
+    REFERENCES PRODUTO (ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE COMPRA_ITEM ADD CONSTRAINT FK_COMPRA_ITEM_1
+    FOREIGN KEY (ID_item)
+    REFERENCES ITEM (ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE COMPRA_ITEM ADD CONSTRAINT FK_COMPRA_ITEM_2
+    FOREIGN KEY (ID_compra)
+    REFERENCES COMPRA (ID)
+    ON DELETE SET NULL;
 ```
 
 
