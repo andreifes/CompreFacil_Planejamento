@@ -17,11 +17,11 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 ![Arquivo PDF do Protótipo Balsamiq feito para o CompreFácil](https://raw.githubusercontent.com/andreifes/CompreFacil_Planejamento/main/Arquivos/Wireframes_Inicial.pdf")
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? - Para versão inicial<br>
-* Relatório com a quantidade total de produtos vendidos pelo supermercado, incluindo as seguintes informações: nome do supermercado e quantidade de produtos total vendidos.
-* Relatório dos supermercados de uma cidade, incluindo as seguintes informações: nome da cidade e nome dos supermercados.
-* Relatório com os produtos de um supermercado, incluindo as seguintes informações: nome do supermercado, nome e preço dos produtos.
-* Relatório que informe os produtos de uma categoria, incluindo as seguintes informações: nome da categoria e nome dos produtos.
-* Relatório com as formas de pagamento e quantidade utilizadas no supermercado, incluindo as seguintes informações: nome do supermercado, forma de pagamento e quantidade.
+* Relatório com a quantidade total de produtos vendidos pelo supermercado, incluindo as seguintes informações: nome do supermercado e quantidade total de produtos vendidos.
+* Relatório dos supermercados de uma cidade, incluindo as seguintes informações: nome da cidade e nomes dos supermercados.
+* Relatório com os produtos de um supermercado, incluindo as seguintes informações: nome do supermercado, nomes dos produtos e preço.
+* Relatório que informe os produtos de uma categoria, incluindo as seguintes informações: nome da categoria e nomes dos produtos.
+* Relatório com as formas de pagamento e quantidade utilizadas no supermercado, incluindo as seguintes informações: nome do supermercado, forma de pagamentos e quantidades.
 
 
 ### 4.TABELA DE DADOS DO SISTEMA - Para versão inicial<br>
