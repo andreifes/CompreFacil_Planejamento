@@ -28,7 +28,7 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 
 
 ### 5.PMC - Para versão final<br>
-![Aquivo PNG do PMC feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/PMC_Final.PNG)
+![Aquivo PNG do PMC feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/IMGS/PMC_Final.PNG)
 
 
 ### 6.MODELO CONCEITUAL - Para versão inicial<br>    
