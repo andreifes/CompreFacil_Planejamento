@@ -36,54 +36,54 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 
 #### 6.1 Descrição dos dados - Para versão inicial<br> 
   USUARIO: tabela que armazena as informações relativas ao usuário<br>
-  ID: campo que armazena o identificador do usuário<br>
-  NOME: campo que armazena o nome do usuário<br>
-  EMAIL: campo que armazena o e-mail do usuário<br>
-  TELEFONE: campo que armazena o telefone do usuário<br>
-  SENHA: campo que armazena a senha do usuário<br>
+   ID: campo que armazena o identificador do usuário<br>
+   NOME: campo que armazena o nome do usuário<br>
+   EMAIL: campo que armazena o e-mail do usuário<br>
+   TELEFONE: campo que armazena o telefone do usuário<br>
+   SENHA: campo que armazena a senha do usuário<br>
 
   ENDERECO: tabela que armazena as informações relativas a endereço do mercado<br>
-  ID: campo que armazena o identificador do endereço<br>
-  CIDADE: campo que armazena a cidade referente ao endereço<br>
-  BAIRRO: campo que armazena o bairro referente ao endereço<br>
+   ID: campo que armazena o identificador do endereço<br>
+   CIDADE: campo que armazena a cidade referente ao endereço<br>
+   BAIRRO: campo que armazena o bairro referente ao endereço<br>
 
   CATEGORIA: tabela que armazena as informações relativas a categoria do produto<br>
-  ID: campo que armazena o identificador da categoria<br>
-  NOME: campo que armazena o nome das possíveis categorias de um produto<br>
+   ID: campo que armazena o identificador da categoria<br>
+   NOME: campo que armazena o nome das possíveis categorias de um produto<br>
 
   FORMA_PGTO: tabela que armazena as informações relativas a opção de forma de pagamento da uma compra<br>
-  ID: campo que armazena o identificador da forma de pagamento<br>
-  NOME: campo que armazena o nome da forma de pagamento<br>
+   ID: campo que armazena o identificador da forma de pagamento<br>
+   NOME: campo que armazena o nome da forma de pagamento<br>
 
   MERCADO: tabela que armazena as informações relativas ao mercado<br>
-  ID: campo que armazena o identificador do mercado<br>
-  NOME: campo que armazena o nome do mercado<br>
-  IMG: campo que armazena a imagem(base64) do mercado<br>
-  ID_ENDERECO: campo que armazena o identificador do endereço do mercado<br>
+   ID: campo que armazena o identificador do mercado<br>
+   NOME: campo que armazena o nome do mercado<br>
+   IMG: campo que armazena a imagem(base64) do mercado<br>
+   ID_ENDERECO: campo que armazena o identificador do endereço do mercado<br>
 
   PRODUTO: tabela que armazena as informações relativas ao produto<br>
-  ID: campo que armazena o identificador do mercado<br>
-  NOME: campo que armazena o nome do produto<br>
-  IMG: campo que armazena a imagem(base64) do produto<br>
-  ID_CATEGORIA: campo que armazena o identificador da categoria do produto<br>
+   ID: campo que armazena o identificador do mercado<br>
+   NOME: campo que armazena o nome do produto<br>
+   IMG: campo que armazena a imagem(base64) do produto<br>
+   ID_CATEGORIA: campo que armazena o identificador da categoria do produto<br>
 
   COMPRA: tabela que armazena as informações relativas a compra feita por um usuário<br>
-  ID: campo que armazena o identificador da compra realizada pelo usuário<br>
-  DATA_HORA: campo que armazena a data e hora da compra<br>
-  STTS_PGTO: campo que armazena a confirmação ou não de pagamento da compra<br>
-  ID_USUARIO: campo que armazena o identificador do usuário que realizou a compra<br>
-  ID_FORMA_PGTO: campo que armazena o identificador da forma de pagamento utilizada<br> 
+   ID: campo que armazena o identificador da compra realizada pelo usuário<br>
+   DATA_HORA: campo que armazena a data e hora da compra<br>
+   STTS_PGTO: campo que armazena a confirmação ou não de pagamento da compra<br>
+   ID_USUARIO: campo que armazena o identificador do usuário que realizou a compra<br>
+   ID_FORMA_PGTO: campo que armazena o identificador da forma de pagamento utilizada<br> 
 
   ITEM: tabela que armazena as informações relativas aos items dos mercados<br>
-  ID: campo que armazena o identificador do item<br>
-  ID_MERCADO: campo que armazena o identificador do mercado <br>
-  ID_PRODUTO: campo que armazena o identificador do produto contido no item<br>
-  PRECO: campo que armazena o preco do produto<br>
+   ID: campo que armazena o identificador do item<br>
+   ID_MERCADO: campo que armazena o identificador do mercado <br>
+   ID_PRODUTO: campo que armazena o identificador do produto contido no item<br>
+   PRECO: campo que armazena o preco do produto<br>
 
   COMPRA_ITEM: tabela que armazena as informações relativas a compra dos itens de um mercado<br>
-  ID_COMPRA: campo que armazena o identificador da compra que contém os itens<br>
-  ID_ITEM: campo que armazena o identificador do item<br>
-  QUANTIDADE: campo que armazena a quantidade do item<br>
+   ID_COMPRA: campo que armazena o identificador da compra que contém os itens<br>
+   ID_ITEM: campo que armazena o identificador do item<br>
+   QUANTIDADE: campo que armazena a quantidade do item<br>
 
 
 ### 7.MODELO LÓGICO - Para versão inicial<br>
