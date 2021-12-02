@@ -28,62 +28,62 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 
 
 ### 5.PMC - Para versão final<br>
-![Aquivo PDF do PMC feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/PMC_Final.pdf)
+![Aquivo PNG do PMC feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/PMC_Final.PNG)
 
 
 ### 6.MODELO CONCEITUAL - Para versão inicial<br>    
 ![Aquivo PNG do Modelo Conceitual feito para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/IMGS/Conceitual_Inicial.PNG)
 
 #### 6.1 Descrição dos dados - Para versão inicial<br> 
-  USUARIO: tabela que armazena as informações relativas ao usuário
-  ID: campo que armazena o identificador do usuário
-  NOME: campo que armazena o nome do usuário
-  EMAIL: campo que armazena o e-mail do usuário
-  TELEFONE: campo que armazena o telefone do usuário
-  SENHA: campo que armazena a senha do usuário
+  USUARIO: tabela que armazena as informações relativas ao usuário<br>
+  ID: campo que armazena o identificador do usuário<br>
+  NOME: campo que armazena o nome do usuário<br>
+  EMAIL: campo que armazena o e-mail do usuário<br>
+  TELEFONE: campo que armazena o telefone do usuário<br>
+  SENHA: campo que armazena a senha do usuário<br>
 
-  ENDERECO: tabela que armazena as informações relativas a endereço do mercado
-  ID: campo que armazena o identificador do endereço
-  CIDADE: campo que armazena a cidade referente ao endereço
-  BAIRRO: campo que armazena o bairro referente ao endereço
+  ENDERECO: tabela que armazena as informações relativas a endereço do mercado<br>
+  ID: campo que armazena o identificador do endereço<br>
+  CIDADE: campo que armazena a cidade referente ao endereço<br>
+  BAIRRO: campo que armazena o bairro referente ao endereço<br>
 
-  CATEGORIA: tabela que armazena as informações relativas a categoria do produto
-  ID: campo que armazena o identificador da categoria
-  NOME: campo que armazena o nome das possíveis categorias de um produto
+  CATEGORIA: tabela que armazena as informações relativas a categoria do produto<br>
+  ID: campo que armazena o identificador da categoria<br>
+  NOME: campo que armazena o nome das possíveis categorias de um produto<br>
 
-  FORMA_PGTO: tabela que armazena as informações relativas a opção de forma de pagamento da uma compra
-  ID: campo que armazena o identificador da forma de pagamento
-  NOME: campo que armazena o nome da forma de pagamento
+  FORMA_PGTO: tabela que armazena as informações relativas a opção de forma de pagamento da uma compra<br>
+  ID: campo que armazena o identificador da forma de pagamento<br>
+  NOME: campo que armazena o nome da forma de pagamento<br>
 
-  MERCADO: tabela que armazena as informações relativas ao mercado
-  ID: campo que armazena o identificador do mercado
-  NOME: campo que armazena o nome do mercado
-  IMG: campo que armazena a imagem(base64) do mercado
-  ID_ENDERECO: campo que armazena o identificador do endereço do mercado
+  MERCADO: tabela que armazena as informações relativas ao mercado<br>
+  ID: campo que armazena o identificador do mercado<br>
+  NOME: campo que armazena o nome do mercado<br>
+  IMG: campo que armazena a imagem(base64) do mercado<br>
+  ID_ENDERECO: campo que armazena o identificador do endereço do mercado<br>
 
-  PRODUTO: tabela que armazena as informações relativas ao produto
-  ID: campo que armazena o identificador do mercado
-  NOME: campo que armazena o nome do produto
-  IMG: campo que armazena a imagem(base64) do produto
-  ID_CATEGORIA: campo que armazena o identificador da categoria do produto
+  PRODUTO: tabela que armazena as informações relativas ao produto<br>
+  ID: campo que armazena o identificador do mercado<br>
+  NOME: campo que armazena o nome do produto<br>
+  IMG: campo que armazena a imagem(base64) do produto<br>
+  ID_CATEGORIA: campo que armazena o identificador da categoria do produto<br>
 
-  COMPRA: tabela que armazena as informações relativas a compra feita por um usuário
-  ID: campo que armazena o identificador da compra realizada pelo usuário
-  DATA_HORA: campo que armazena a data e hora da compra
-  STTS_PGTO: campo que armazena a confirmação ou não de pagamento da compra
-  ID_USUARIO: campo que armazena o identificador do usuário que realizou a compra
-  ID_FORMA_PGTO: campo que armazena o identificador da forma de pagamento utilizada 
+  COMPRA: tabela que armazena as informações relativas a compra feita por um usuário<br>
+  ID: campo que armazena o identificador da compra realizada pelo usuário<br>
+  DATA_HORA: campo que armazena a data e hora da compra<br>
+  STTS_PGTO: campo que armazena a confirmação ou não de pagamento da compra<br>
+  ID_USUARIO: campo que armazena o identificador do usuário que realizou a compra<br>
+  ID_FORMA_PGTO: campo que armazena o identificador da forma de pagamento utilizada<br> 
 
-  ITEM: tabela que armazena as informações relativas aos items dos mercados
-  ID: campo que armazena o identificador do item
-  ID_MERCADO: campo que armazena o identificador do mercado 
-  ID_PRODUTO: campo que armazena o identificador do produto contido no item
-  PRECO: campo que armazena o preco do produto
+  ITEM: tabela que armazena as informações relativas aos items dos mercados<br>
+  ID: campo que armazena o identificador do item<br>
+  ID_MERCADO: campo que armazena o identificador do mercado <br>
+  ID_PRODUTO: campo que armazena o identificador do produto contido no item<br>
+  PRECO: campo que armazena o preco do produto<br>
 
-  COMPRA_ITEM: tabela que armazena as informações relativas a compra dos itens de um mercado
-  ID_COMPRA: campo que armazena o identificador da compra que contém os itens
-  ID_ITEM: campo que armazena o identificador do item
-  QUANTIDADE: campo que armazena a quantidade do item
+  COMPRA_ITEM: tabela que armazena as informações relativas a compra dos itens de um mercado<br>
+  ID_COMPRA: campo que armazena o identificador da compra que contém os itens<br>
+  ID_ITEM: campo que armazena o identificador do item<br>
+  QUANTIDADE: campo que armazena a quantidade do item<br>
 
 
 ### 7.MODELO LÓGICO - Para versão inicial<br>
