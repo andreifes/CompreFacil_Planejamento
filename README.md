@@ -14,7 +14,7 @@ João Matheus Siller Pessanha: universitariodoano@gmail.com<br>
 
 
 ### 3.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS) - Para versão inicial<br>
-![Arquivo PDF do Protótipo Balsamiq feito para o CompreFácil](https://raw.githubusercontent.com/andreifes/CompreFacil_Planejamento/main/Arquivos/Wireframes_Inicial.pdf")
+![Arquivo PDF do Protótipo Balsamiq feito para o CompreFácil](https://raw.githubusercontent.com/andreifes/CompreFacil_Planejamento/main/Arquivos/Wireframes_Inicial.pdf)
 
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? - Para versão inicial<br>
 * Relatório com a quantidade total de produtos vendidos pelo supermercado, incluindo as seguintes informações: nome do supermercado e quantidade total de produtos vendidos.
