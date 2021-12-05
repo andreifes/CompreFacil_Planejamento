@@ -141,9 +141,9 @@ CREATE TABLE COMPRA (
 
 CREATE TABLE ITEM (
     ID INT PRIMARY KEY,
-    preco MONEY,
     ID_mercado INT,
-    ID_produto INT
+    ID_produto INT,
+    preco MONEY
 );
 
 CREATE TABLE COMPRA_ITEM (
