@@ -147,8 +147,8 @@ CREATE TABLE ITEM (
 );
 
 CREATE TABLE COMPRA_ITEM (
-    ID_item INT,
     ID_compra INT,
+    ID_item INT,
     quantidade INT
 );
  
@@ -195,7 +195,7 @@ ALTER TABLE COMPRA_ITEM ADD CONSTRAINT FK_COMPRA_ITEM_2
 
 
 ### 9.INSERT APLICADO NAS TABELAS DO BANCO DE DADOS - Para versão inicial<br>
-
+![Aquivo TXT dos INSERTS feitos para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos_edit/Insert_Inicial.txt)
 
 ### 10.TABELAS E PRINCIPAIS CONSULTAS - Para versão inicial<br>
 
