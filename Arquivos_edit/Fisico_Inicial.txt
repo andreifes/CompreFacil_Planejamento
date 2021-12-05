@@ -1,0 +1,58 @@
+CREATE TABLE USUARIO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    telefone VARCHAR(30),
+    senha VARCHAR(30)
+);
+
+CREATE TABLE ENDERECO (
+    ID INT PRIMARY KEY,
+    cidade VARCHAR(255),
+    bairro VARCHAR(255)
+);
+
+CREATE TABLE CATEGORIA (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE FORMA_PGTO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE MERCADO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    img TEXT,
+    ID_endereco INT
+);
+
+CREATE TABLE PRODUTO (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(255),
+    img TEXT,
+    ID_categoria INT
+);
+
+CREATE TABLE COMPRA (
+    ID INT PRIMARY KEY,
+    data_hora TIMESTAMP,
+    stts_pgto BOOLEAN,
+    ID_usuario INT,
+    ID_forma_pgto INT
+);
+
+CREATE TABLE ITEM (
+    ID INT PRIMARY KEY,
+    ID_mercado INT,
+    ID_produto INT,
+    preco MONEY
+);
+
+CREATE TABLE COMPRA_ITEM (
+    ID_compra INT,
+    ID_item INT,
+    quantidade INT
+);
