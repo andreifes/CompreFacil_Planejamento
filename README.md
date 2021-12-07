@@ -197,11 +197,63 @@ ALTER TABLE COMPRA_ITEM ADD CONSTRAINT FK_COMPRA_ITEM_2
 ### 9.INSERT APLICADO NAS TABELAS DO BANCO DE DADOS - Para versão inicial<br>
 ![Aquivo TXT dos INSERTS feitos para o protótipo CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos_edit/Insert_Inicial.txt)
 
+
 ### 10.TABELAS E PRINCIPAIS CONSULTAS - Para versão inicial<br>
 
 #### 10.1 CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS - Para versão inicial<br>
+```sql
+SELECT * FROM USUARIO;
+```
+![USUARIO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/USUARIO.JPG)
+
+```sql
+SELECT * FROM ENDERECO;
+```
+![ENDERECO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ENDERECO.JPG)
+
+```sql
+SELECT * FROM CATEGORIA;
+```
+![CATEGORIA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/CATEGORIA.JPG)
+
+```sql
+SELECT * FROM FORMA_PGTO;
+```
+![FORMA_PGTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/FORMA_PGTO.JPG)
+
+```sql
+SELECT * FROM MERCADO;
+```
+![MERCADO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/MERCADO.JPG)
+
+```sql
+SELECT * FROM PRODUTO;
+```
+![PRODUTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/PRODUTO.JPG)
+
+```sql
+SELECT * FROM COMPRA;
+```
+![COMPRA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA.JPG)
+
+```sql
+SELECT * FROM ITEM;
+```
+![ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM1.JPG)
+![ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM2.JPG)
+![ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM3.JPG)
+
+```sql
+SELECT * FROM COMPRA_ITEM;
+```
+![COMPRA_ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM1.JPG)
+![COMPRA_ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM2.JPG)
+![COMPRA_ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM3.JPG)
 
 #### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA - Para versão inicial<br>
 
 ### 11.PERSONAS - Para versão final<br>
-### 11.HISTÓRIA DE USUÁRIOS - Para versão final<br>
+![Arquivo PDF das Personas feitas para o CompreFácil](https://github.com/andreifes/CompreFacil_Planejamento/raw/main/Arquivos/Personas_Final.pdf)
+
+
+### 12.HISTÓRIA DE USUÁRIOS - Para versão final<br>
