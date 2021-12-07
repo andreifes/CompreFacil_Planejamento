@@ -201,54 +201,36 @@ ALTER TABLE COMPRA_ITEM ADD CONSTRAINT FK_COMPRA_ITEM_2
 ### 10.TABELAS E PRINCIPAIS CONSULTAS - Para versão inicial<br>
 
 #### 10.1 CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS - Para versão inicial<br>
-```sql
 SELECT * FROM USUARIO;
-```
-![USUARIO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/USUARIO.JPG)
+![USUARIO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/USUARIO.JPG)<br>
 
-```sql
 SELECT * FROM ENDERECO;
-```
-![ENDERECO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ENDERECO.JPG)
+![ENDERECO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ENDERECO.JPG)<br>
 
-```sql
 SELECT * FROM CATEGORIA;
-```
-![CATEGORIA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/CATEGORIA.JPG)
+![CATEGORIA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/CATEGORIA.JPG)<br>
 
-```sql
 SELECT * FROM FORMA_PGTO;
-```
-![FORMA_PGTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/FORMA_PGTO.JPG)
+![FORMA_PGTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/FORMA_PGTO.JPG)<br>
 
-```sql
 SELECT * FROM MERCADO;
-```
-![MERCADO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/MERCADO.JPG)
+![MERCADO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/MERCADO.JPG)<br>
 
-```sql
 SELECT * FROM PRODUTO;
-```
-![PRODUTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/PRODUTO.JPG)
+![PRODUTO](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/PRODUTO.JPG)<br>
 
-```sql
 SELECT * FROM COMPRA;
-```
-![COMPRA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA.JPG)
+![COMPRA](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA.JPG)<br>
 
-```sql
 SELECT * FROM ITEM;
-```
-![ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM1.JPG)
-![ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM2.JPG)
-![ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM3.JPG)
+![ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM1.JPG)<br>
+![ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM2.JPG)<br>
+![ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/ITEM3.JPG)<br>
 
-```sql
 SELECT * FROM COMPRA_ITEM;
-```
-![COMPRA_ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM1.JPG)
-![COMPRA_ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM2.JPG)
-![COMPRA_ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM3.JPG)
+![COMPRA_ITEM1](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM1.JPG)<br>
+![COMPRA_ITEM2](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM2.JPG)<br>
+![COMPRA_ITEM3](https://github.com/andreifes/CompreFacil_Planejamento/blob/main/Arquivos/IMGS/COMPRA_ITEM3.JPG)<br>
 
 #### 10.2 PRINCIPAIS CONSULTAS DO SISTEMA - Para versão inicial<br>
 
